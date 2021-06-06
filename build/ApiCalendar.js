@@ -149,7 +149,7 @@ var ApiCalendar = function () {
     key: 'handleSignoutClick',
     value: function handleSignoutClick() {
       if (this.gapi) {
-        this.gapi.auth2.getAuthInstance().signOut();
+        return this.gapi.auth2.getAuthInstance().signOut();
       } else {
         console.log('Error: this.gapi not loaded');
       }
